@@ -6,7 +6,7 @@ In `index.js` you can find a short example taking your keys from DPS, generating
 
 Here's what it looks like when running:
 
-```
+```json
 jlorich@games:/mnt/c/Users/Joseph/projects/dps-test$ node index.js
 (node:451) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
 statusCode:  200
