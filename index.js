@@ -4,6 +4,7 @@ var https = require('https');
 var dps_uri = "";
 var keyname = "";
 var key = "";
+var registration_id = ""
 
 var generateSasToken = function(resourceUri, signingKey, policyName, expiresInMins) {
     resourceUri = encodeURIComponent(resourceUri);
@@ -29,7 +30,7 @@ var sas = generateSasToken(dps_uri, key, keyname, 3600);
 var options = {
     host: dps_uri,
     port: 443,
-    path: "/enrollments/5410eca1ba50?api-version=2019-03-31",
+    path: `/enrollments/${registration_id}?api-version=2019-03-31`,
     method: "GET",
     headers: { 'Authorization': sas }
 };
